@@ -9,6 +9,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <exec.mainClass>src.mx.ipn.escom.compiladores.SQL</exec.mainClass>
+        <exec.mainClass>mx.ipn.escom.compiladores.Principal</exec.mainClass>
     </properties>
 </project>
