@@ -4,7 +4,7 @@ public class Token {
 
     final TipoToken tipo;
     final String lexema;
-
+    
     final int posicion;
 
     public Token(TipoToken tipo, String lexema, int posicion) {
@@ -18,6 +18,7 @@ public class Token {
         this.lexema = lexema;
         this.posicion = 0;
     }
+    
 
     @Override
     public boolean equals(Object o) {

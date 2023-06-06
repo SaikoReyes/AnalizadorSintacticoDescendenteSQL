@@ -30,12 +30,19 @@ public class Principal {
         Scanner scanner = new Scanner(source);
         List<Token> tokens = scanner.scanTokens();
 
-        /*for(Token token : tokens){
+        for(Token token : tokens){
             System.out.println(token);
-        }*/
-
-        Parser parser = new Parser(tokens);
-        parser.parse();
+        }
+        System.out.println("\n");
+        
+        System.out.println("Creacion del arbol\n");
+        GeneradorAST gast = new GeneradorAST(tokens);
+        Arbol programa = gast.generarAST();
+        
+        
+        System.out.println("\n");
+        int c = gast.conteo;
+        programa.recorrer(c);
     }
 
     /*
